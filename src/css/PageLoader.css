@@ -1,0 +1,15 @@
+.page-loader {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #faed27;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page-loader-txt {
+    font-size: 5rem;
+}

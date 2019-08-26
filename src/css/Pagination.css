@@ -1,0 +1,39 @@
+.pagination {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+.pagination-inner {
+    width: 50%;
+}
+.pagination-inner.next {
+    text-align: right;
+}
+.pagination-item {
+    display: inline-block;
+    cursor: pointer;
+}
+.pagination-title {
+    position: relative;
+    font-size: 1.4rem;
+}
+.pagination-item .pagination-title:before {
+    content: "";
+    position: absolute;
+    height: 12px;
+    width: 0;
+    bottom: -2px;
+    background: #faed27;
+    z-index: -1;
+    transition: width 0.3s ease-in-out;
+}
+.pagination-item:hover .pagination-title:before {
+    width: 100%;
+}
+
+@media only screen and (max-width: 700px) {
+    .pagination-inner {
+        width: 100%;
+        margin: 10px 0;
+    }
+}

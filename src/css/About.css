@@ -1,0 +1,27 @@
+#about h2.highlight:before {
+    transition: width 0.3s ease;
+}
+#about .content-offctr {
+    width: 50%;
+}
+#about .in-view h2.highlight:before {
+    width: 100%;
+}
+.about-picture {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 40%;
+    height: auto;
+}
+.about-picture img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+@media only screen and (max-width: 530px) {
+    .about-picture {
+        width: 58%;
+    }
+}
